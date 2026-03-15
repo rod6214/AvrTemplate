@@ -1,0 +1,17 @@
+## Avrdude commands for flashing the microcontroller
+```
+avrdude -c USBasp -p m328p -u -U flash:w:OpenProgrammer.hex:i
+avrdude -c USBasp -p m328p -u -U flash:r:OpenRProgrammer.hex:i
+avrdude -c USBasp -p m328p -u -U lfuse:r:IOpenLFuse.hex:i
+avrdude -c USBasp -p m328p -u -U hfuse:r:IOpenHFuse.hex:i
+activate CLOCKOUT
+avrdude -c USBasp -p m328p -u -U lfuse:w:0x22:m
+avrdude -c USBasp -p m328p -u -U lfuse:w:0x62:m
+avrdude -c USBasp -p m328p -u -U lfuse:w:0xE2:m
+avrdude -c USBasp -p m328p -u -U lfuse:r:IOpenLFuse.bin:i
+avrdude -c USBasp -p m328p -u -U lock:r:IOpenLock.hex:i
+
+avrdude -c USBasp -p m32u4 -u -U flash:r:readProgMem.hex:i
+avrdude -c USBasp -p m32u4 -u -U flash:w:AvrTemplate.hex:i
+avrdude -c USBasp -p m32u4 -u -U lfuse:r:IOpenLFuse.hex:i
+```
