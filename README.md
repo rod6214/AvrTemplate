@@ -19,6 +19,8 @@ You must configure your Windows or Linux environment to include the AVR toolchai
 
 ## Usage
 
+To use this template, open a **Developer Command Prompt for Visual Studio**. This ensures all necessary environment variables are set for building and flashing AVR projects.
+
 1. Open a **Developer Command Prompt for Visual Studio**.
 2. Navigate to your AVR template project directory:
 
@@ -38,8 +40,6 @@ You must configure your Windows or Linux environment to include the AVR toolchai
 
 You should now be ready to start programming your Atmega microcontroller!
 
----
-For any issues or questions, please refer to the official documentation or open an issue in this repository.
 
 ## Required Visual Studio Code Extensions
 
@@ -49,10 +49,6 @@ For any issues or questions, please refer to the official documentation or open 
 ## Toolchain Environment Setup
 
 You must configure your Windows or Linux environment to include the AVR toolchain path. Make sure the toolchain binaries are accessible from your terminal.
-
-## Usage
-
-To use this template, open a **Developer Command Prompt for Visual Studio**. This ensures all necessary environment variables are set for building and flashing AVR projects.
 
 ---
 For any issues or questions, please refer to the official documentation or open an issue in this repository.
